@@ -30,7 +30,7 @@ function reducer (state = initialState, action) {
         case AUTHOR_LAST:
             return { ...state, authorLast: payload };
         case ADD_INSTRUCTION:
-            const newInstructions = [...this.instructions, payload];
+            const newInstructions = [...state.instructions, payload];
             return { ...state, instructions: newInstructions}
         case ADD_INGREDIENT:
             const newIngredients = [...state.ingredients, payload];
